@@ -1,0 +1,17 @@
+parseltongue (2.3-1ubuntu1ppa1~trusty1) trusty; urgency=low
+
+  * Update to ParselTongue 2.3.
+
+ -- Mark Kettenis <kettenis@jive.nl>  Tue, 08 Sep 2015 15:14:02 +0200
+
+parseltongue (2.2-1ubuntu1ppa1~precise1) precise; urgency=low
+
+  * Update to ParselTongue 2.2.
+
+ -- Mark Kettenis <kettenis@jive.nl>  Fri, 03 Apr 2015 12:15:44 +0200
+
+parseltongue (2.1-1ubuntu1ppa1) precise; urgency=low
+
+  * Initial release.
+
+ -- Mark Kettenis <kettenis@jive.nl>  Fri, 06 Mar 2015 15:35:39 +0100
