@@ -1,2 +1,14 @@
 python/*.pyc
 python/*/*.pyc
+Makefile
+bin/Makefile
+bin/ParselFileServer
+bin/ParselTongue
+bin/ParselTongueServer
+config.log
+config.status
+doc/Makefile
+python/Makefile
+python/Proxy/Makefile
+python/Wizardry/Makefile
+test/Makefile
