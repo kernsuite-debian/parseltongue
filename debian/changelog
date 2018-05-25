@@ -1,3 +1,9 @@
+parseltongue (2.3-1kern2) bionic; urgency=medium
+
+  * New upstream release for bionic
+
+ -- KERN packaging <packaging@kernsuite.info>  Fri, 25 May 2018 11:13:43 +0000
+
 parseltongue (2.3-1ubuntu1ppa1~trusty1kern1) xenial; urgency=medium
 
   * update signature
