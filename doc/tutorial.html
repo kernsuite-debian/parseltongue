@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>ParselTongue Tutorial</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book"><div class="titlepage"><div><div><h1 class="title"><a name="idp4335456"></a><span class="application">ParselTongue</span> Tutorial</h1></div><div><div class="author"><h3 class="author"><span class="firstname">Mark</span> <span class="surname">Kettenis</span></h3><div class="affiliation"><span class="orgname">JIVE<br></span></div></div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="chapter"><a href="#idp4340752">1. Starting an interactive <span class="application">ParselTongue</span> session</a></span></dt><dt><span class="chapter"><a href="#idp4346160">2. Running <span class="application"><acronym class="acronym">AIPS</acronym></span> tasks</a></span></dt><dt><span class="chapter"><a href="#idp4379072">3. Array Indexing</a></span></dt><dt><span class="chapter"><a href="#idp4390784">4. Accessing <span class="application"><acronym class="acronym">AIPS</acronym></span> data</a></span></dt><dd><dl><dt><span class="section"><a href="#idp4412224">Headers</a></span></dt><dt><span class="section"><a href="#idp4420032">Tables</a></span></dt><dt><span class="section"><a href="#idp4431264">Convenience functions</a></span></dt><dt><span class="section"><a href="#idp4439712">Cleaning up</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idp4453184">5. Scripts</a></span></dt><dt><span class="chapter"><a href="#idp4460848">6. Wizardry</a></span></dt></dl></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idp4340752"></a>Chapter 1. Starting an interactive <span class="application">ParselTongue</span> session</h1></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>ParselTongue Tutorial</title><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book"><div class="titlepage"><div><div><h1 class="title"><a name="idm1"></a><span class="application">ParselTongue</span> Tutorial</h1></div><div><div class="author"><h3 class="author"><span class="firstname">Mark</span> <span class="surname">Kettenis</span></h3><div class="affiliation"><span class="orgname">JIVE<br></span></div></div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="chapter"><a href="#idm10">1. Starting an interactive <span class="application">ParselTongue</span> session</a></span></dt><dt><span class="chapter"><a href="#idm20">2. Running <span class="application"><acronym class="acronym">AIPS</acronym></span> tasks</a></span></dt><dt><span class="chapter"><a href="#idm91">3. Array Indexing</a></span></dt><dt><span class="chapter"><a href="#idm117">4. Accessing <span class="application"><acronym class="acronym">AIPS</acronym></span> data</a></span></dt><dd><dl><dt><span class="section"><a href="#idm157">Headers</a></span></dt><dt><span class="section"><a href="#idm172">Tables</a></span></dt><dt><span class="section"><a href="#idm191">Convenience functions</a></span></dt><dt><span class="section"><a href="#idm206">Cleaning up</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idm228">5. Scripts</a></span></dt><dt><span class="chapter"><a href="#idm242">6. Wizardry</a></span></dt></dl></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm10"></a>Chapter 1. Starting an interactive <span class="application">ParselTongue</span> session</h1></div></div></div><p>
 For this tutorial we will use an interactive <span class="application">ParselTongue</span> session:
 
 </p><pre class="screen">
@@ -13,7 +13,7 @@ Please enter your AIPS user ID number: <strong class="userinput"><code>3601</cod
 
 </pre><p>
 
-</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idp4346160"></a>Chapter 2. Running <span class="application"><acronym class="acronym">AIPS</acronym></span> tasks</h1></div></div></div><p>
+</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm20"></a>Chapter 2. Running <span class="application"><acronym class="acronym">AIPS</acronym></span> tasks</h1></div></div></div><p>
 Use the <code class="classname">AIPSTask</code> class to run <span class="application"><acronym class="acronym">AIPS</acronym></span> tasks:
 
 </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
@@ -74,7 +74,7 @@ The verbosity of the output is controlled by
 <code class="prompt">&gt;&gt;&gt;</code> <span class="command"><strong>imean.go()</strong></span>
 ...
 </pre><p>
-</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idp4379072"></a>Chapter 3. Array Indexing</h1></div></div></div><p>
+</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm91"></a>Chapter 3. Array Indexing</h1></div></div></div><p>
 
 There are different array indexing conventions around:
 
@@ -106,7 +106,7 @@ ValueError: setting element '0' is prohibited
 [256.0, 256.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 </pre><p>
 
-</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idp4390784"></a>Chapter 4. Accessing <span class="application"><acronym class="acronym">AIPS</acronym></span> data</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="#idp4412224">Headers</a></span></dt><dt><span class="section"><a href="#idp4420032">Tables</a></span></dt><dt><span class="section"><a href="#idp4431264">Convenience functions</a></span></dt><dt><span class="section"><a href="#idp4439712">Cleaning up</a></span></dt></dl></div><p>
+</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm117"></a>Chapter 4. Accessing <span class="application"><acronym class="acronym">AIPS</acronym></span> data</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="#idm157">Headers</a></span></dt><dt><span class="section"><a href="#idm172">Tables</a></span></dt><dt><span class="section"><a href="#idm191">Convenience functions</a></span></dt><dt><span class="section"><a href="#idm206">Cleaning up</a></span></dt></dl></div><p>
 
 Use the <code class="classname">AIPSUVData</code> and
 <code class="classname">AIPSImage</code> classes to access the metadata
@@ -144,7 +144,7 @@ These <span class="application">ParselTongue</span> data can be used convenientl
 <code class="prompt">&gt;&gt;&gt;</code> <span class="command"><strong>uvdata.exists()</strong></span>
 True
 </pre><p>
-</p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp4412224"></a>Headers</h2></div></div></div><p>
+</p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm157"></a>Headers</h2></div></div></div><p>
 You can access the header through the <code class="varname">header</code> attribute:
 
 </p><pre class="screen">
@@ -160,7 +160,7 @@ You can access the header through the <code class="varname">header</code> attrib
 
 Keywords are the same as for the <span class="application"><acronym class="acronym">AIPS</acronym></span> GETHEAD verb, but lower case
 with '-' replaced by '_'.
-</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp4420032"></a>Tables</h2></div></div></div><p>
+</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm172"></a>Tables</h2></div></div></div><p>
 What tables do we have?
 </p><pre class="screen">
 <code class="prompt">&gt;&gt;&gt;</code> <span class="command"><strong>uvdata.tables</strong></span>
@@ -184,7 +184,7 @@ It is also possible to access individual rows directly:
 <code class="prompt">&gt;&gt;&gt;</code> <span class="command"><strong>print cltable[0]</strong></span>
 ...
 </pre><p>
-</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp4431264"></a>Convenience functions</h2></div></div></div><p>
+</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm191"></a>Convenience functions</h2></div></div></div><p>
 <span class="application">ParselTongue</span> includes some convenience functions that 
 </p><pre class="screen">
 <code class="prompt">&gt;&gt;&gt;</code> <span class="command"><strong>uvdata.antennas</strong></span>
@@ -198,7 +198,7 @@ It is also possible to access individual rows directly:
 <code class="prompt">&gt;&gt;&gt;</code> <span class="command"><strong>image.stokes</strong></span>
 ['I']
 </pre><p>
-</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp4439712"></a>Cleaning up</h2></div></div></div><p>
+</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm206"></a>Cleaning up</h2></div></div></div><p>
 Finally when you're done you should clean up.  The following command
 removes the entire data set:
 
@@ -227,7 +227,7 @@ if you want to zap all tables of a particular type:
 <code class="prompt">&gt;&gt;&gt;</code> <span class="command"><strong>uvdata.tables</strong></span>
 [[1, 'AIPS HI'], [1, 'AIPS CL'], [1, 'AIPS FQ'], [1, 'AIPS AN'], [1, 'AIPS SU']]
 </pre><p>
-</p></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idp4453184"></a>Chapter 5. Scripts</h1></div></div></div><p>
+</p></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm228"></a>Chapter 5. Scripts</h1></div></div></div><p>
 In order to use <span class="application">ParselTongue</span> from scripts you'll need to import the
 appropriate <span class="application">ParselTongue</span> modules and set your <span class="application"><acronym class="acronym">AIPS</acronym></span> user number.  For the
 examples we have seen before, something like the following will
@@ -250,7 +250,7 @@ Starting <span class="application">ParselTongue</span> scripts is easiest done b
 
 This will start <span class="application">Python</span> with all the magic
 environment variables set.
-</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idp4460848"></a>Chapter 6. Wizardry</h1></div></div></div><p>
+</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm242"></a>Chapter 6. Wizardry</h1></div></div></div><p>
 For Hogwarts graduates it is even possible to create new extension
 tables.  The following bit of code creates a new CL table with a
 different amplitude calibration:
