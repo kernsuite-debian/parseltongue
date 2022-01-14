@@ -2,14 +2,27 @@ Source: parseltongue
 Section: science
 Priority: extra
 Maintainer: Mark Kettenis <kettenis@jive.nl>
-Build-Depends: debhelper (>=9), python, obit
-Standards-Version: 3.9.3
+Uploaders: KERN packaging <packaging@kernsuite.info>
+Build-Depends:
+ debhelper (>=11),
+ python3,
+ python3-dev,
+ libcfitsio-dev,
+ libgsl0-dev,
+ obit
+Standards-Version: 4.5.1
 Homepage: http://www.jive.nl/jivewiki/doku.php?id=parseltongue:parseltongue
 
 Package: parseltongue
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, python, obit
-Description: Python scripting interface for classic AIPS
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3, python3-obit
+Description: ParselTongue is a Python interface to classic AIPS, Obit
+ and possibly other task-based data reduction packages.
+
+Package: python3-parseltongue
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python3:Depends}, python3-obit
+Description: Python3 scripting interface for classic AIPS
  ParselTongue is a Python interface to classic AIPS, Obit and possibly
  other task-based data reduction packages. It serves as the software
  infrastructure for some of the ALBUS implementation. It allows you to
