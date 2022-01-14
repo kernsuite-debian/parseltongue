@@ -1,0 +1,56 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ parseltongue (3.0-1kern1) focal; urgency=medium
+ .
+   [ Athanaseus Javas Ramaila ]
+   * New upstream version 3.0
+   * Build for focal
+Author: KERN packaging <packaging@kernsuite.info>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2022-01-13
+
+--- parseltongue-3.0.orig/test/VLBA1.UVCON
++++ parseltongue-3.0/test/VLBA1.UVCON
+@@ -1,13 +1,13 @@
+-10
+-0 0
+-1 1
+- 0 -1640953.7116 -5014816.0236  3575411.8801 0.01 0.75 20 4
+- 0 -1449752.3590 -4975298.5884  3709123.9276 0.01 0.75 20 4
+- 0  2607848.5215 -5488069.6848  1932739.5401 0.01 0.75 20 4
+- 0  1446375.1157 -4447939.6557  4322306.1243 0.01 0.75 20 4
+- 0 -2409150.1123 -4478573.2290  3838617.3987 0.01 0.75 20 4
+- 0 -1995678.6264 -5037317.7133  3357328.1295 0.01 0.75 20 4
+- 0 -1324009.1267 -5332181.9664  3231962.4737 0.01 0.75 20 4
+- 0 -2112064.9761 -3705356.5155  4726813.7983 0.01 0.75 20 4
+- 0  -130872.2539 -4762317.1158  4226851.0403 0.01 0.75 20 4
+- 0 -5464074.9600 -2495249.1157  2148296.8437 0.01 0.75 20 4
++10
++0 0
++1 1
++ 0 -1640953.7116 -5014816.0236  3575411.8801 0.01 0.75 20 4
++ 0 -1449752.3590 -4975298.5884  3709123.9276 0.01 0.75 20 4
++ 0  2607848.5215 -5488069.6848  1932739.5401 0.01 0.75 20 4
++ 0  1446375.1157 -4447939.6557  4322306.1243 0.01 0.75 20 4
++ 0 -2409150.1123 -4478573.2290  3838617.3987 0.01 0.75 20 4
++ 0 -1995678.6264 -5037317.7133  3357328.1295 0.01 0.75 20 4
++ 0 -1324009.1267 -5332181.9664  3231962.4737 0.01 0.75 20 4
++ 0 -2112064.9761 -3705356.5155  4726813.7983 0.01 0.75 20 4
++ 0  -130872.2539 -4762317.1158  4226851.0403 0.01 0.75 20 4
++ 0 -5464074.9600 -2495249.1157  2148296.8437 0.01 0.75 20 4
